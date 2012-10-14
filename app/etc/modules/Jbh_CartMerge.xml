@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * This file is part of Jbh_CartMerge for Magento.
+ *
+ * @license Lesser General Public License v3 (http://www.gnu.org/licenses/lgpl-3.0.txt)
+ * @author Jacques Bodin-Hullin <jacques@bodin-hullin.net>
+ * @category Jbh
+ * @package Jbh_CartMerge
+ * @copyright Copyright (c) 2012 Jacques Bodin-Hullin (http://jacques.sh/)
+ */
+-->
+<config>
+    <modules>
+        <Jbh_CartMerge>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Sales />
+            </depends>
+        </Jbh_CartMerge>
+    </modules>
+</config>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * This file is part of Jbh_CartMerge for Magento.
+ *
+ * @license Lesser General Public License v3 (http://www.gnu.org/licenses/lgpl-3.0.txt)
+ * @author Jacques Bodin-Hullin <jacques@bodin-hullin.net>
+ * @category Jbh
+ * @package Jbh_CartMerge
+ * @copyright Copyright (c) 2012 Jacques Bodin-Hullin (http://jacques.sh/)
+ */
+-->
+<config>
+    <modules>
+        <Jbh_CartMerge>
+            <version>0.1.0</version>
+            <depends>
+                <Mage_Sales />
+            </depends>
+        </Jbh_CartMerge>
+    </modules>
+    <global>
+        <helpers>
+            <jbh_cartmerge>
+                <class>Jbh_CartMerge_Helper</class>
+            </jbh_cartmerge>
+        </helpers>
+        <models>
+            <jbh_cartmerge>
+                <class>Jbh_CartMerge_Model</class>
+            </jbh_cartmerge>
+        </models>
+    </global>
+    <frontend>
+        <events>
+            <sales_quote_merge_before>
+                <observers>
+                    <jbh_cartmerge_truncate_customer_cart>
+                        <class>jbh_cartmerge/observer</class>
+                        <method>truncateCustomerCart</method>
+                    </jbh_cartmerge_truncate_customer_cart>
+                </observers>
+            </sales_quote_merge_before>
+        </events>
+    </frontend>
+    <default>
+        <persistent>
+            <merge>
+                <disabled>0</disabled>
+            </merge>
+        </persistent>
+    </default>
+</config>
