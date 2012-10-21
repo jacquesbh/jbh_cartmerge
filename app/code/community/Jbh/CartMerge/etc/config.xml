@@ -47,6 +47,7 @@
         <persistent>
             <merge>
                 <disabled>0</disabled>
+                <clean_if_empty>0</clean_if_empty>
             </merge>
         </persistent>
     </default>

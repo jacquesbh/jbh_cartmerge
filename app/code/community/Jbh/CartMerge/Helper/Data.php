@@ -17,10 +17,16 @@ class Jbh_CartMerge_Helper_Data extends Mage_Core_Helper_Abstract
 {
 
     /**
-     * Config path : enabled?
+     * Config path: enabled?
      * @const CONFIG_PATH_MERGE_DISABLED string
      */
     const CONFIG_PATH_MERGE_DISABLED = 'persistent/merge/disabled';
+
+    /**
+     * Config path: clean cart if empty
+     * @const CONFIG_PATH_MERGE_CLEAN_IF_EMPTY string
+     */
+    const CONFIG_PATH_MERGE_CLEAN_IF_EMPTY = 'persistent/merge/clean_if_empty';
 
     /**
      * Return if the module is active
@@ -31,6 +37,16 @@ class Jbh_CartMerge_Helper_Data extends Mage_Core_Helper_Abstract
     {
         return $this->isModuleOutputEnabled()
             && Mage::getStoreConfigFlag(self::CONFIG_PATH_MERGE_DISABLED);
+    }
+
+    /**
+     * Return if we need to clean the customer's cart if the visitor's cart is empty
+     * @access public
+     * @return bool
+     */
+    public function cleanIfEmpty()
+    {
+        Mage::getStoreConfigFlag(self::CONFIG_PATH_MERGE_CLEAN_IF_EMPTY);
     }
 
 }

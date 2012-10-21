@@ -24,7 +24,9 @@ class Jbh_CartMerge_Model_Observer extends Mage_Core_Model_Abstract
     public function truncateCustomerCart(Varien_Event_Observer $observer)
     {
         if (Mage::helper('jbh_cartmerge')->isActive()) {
-            $observer->getQuote()->removeAllItems();
+            if ($observer->getSource()->hasItems() || Mage::helper('jbh_cartmerge')->cleanIfEmpty()) {
+                $observer->getQuote()->removeAllItems();
+            }
         }
     }
 
