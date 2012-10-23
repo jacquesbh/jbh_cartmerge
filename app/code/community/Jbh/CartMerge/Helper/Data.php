@@ -20,13 +20,13 @@ class Jbh_CartMerge_Helper_Data extends Mage_Core_Helper_Abstract
      * Config path: enabled?
      * @const CONFIG_PATH_MERGE_DISABLED string
      */
-    const CONFIG_PATH_MERGE_DISABLED = 'persistent/merge/disabled';
+    const CONFIG_PATH_MERGE_DISABLED = 'checkout/merge/disabled';
 
     /**
      * Config path: clean cart if empty
      * @const CONFIG_PATH_MERGE_CLEAN_IF_EMPTY string
      */
-    const CONFIG_PATH_MERGE_CLEAN_IF_EMPTY = 'persistent/merge/clean_if_empty';
+    const CONFIG_PATH_MERGE_CLEAN_IF_EMPTY = 'checkout/merge/clean_if_empty';
 
     /**
      * Return if the module is active
