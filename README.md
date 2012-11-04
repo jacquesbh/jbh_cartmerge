@@ -8,9 +8,16 @@ This module allows you to remove the merge between the customer's cart and the v
 
 Copy the `app` directory recursively into your magento folder.
 
+### For development
+
+Use the `install.sh`.
+
+    Usage: ./install.sh [un]install [magento dir]
+
 ## Options
 
 In admin, `System > Congiguration > Checkout`, part `Shopping Cart Merge Options` :
 
 1.  `Disable Merge`: Set it to _yes_ if you want to disable the cart merge.
 2.  `Clean if visitor's cart is empty`: Set if to _yes_ if you want to keep active the merge if the visitor's cart is empty.
+
