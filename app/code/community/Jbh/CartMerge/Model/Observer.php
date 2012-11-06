@@ -25,7 +25,9 @@ class Jbh_CartMerge_Model_Observer extends Mage_Core_Model_Abstract
     {
         if (Mage::helper('jbh_cartmerge')->isActive()) {
             if ($observer->getSource()->hasItems() || Mage::helper('jbh_cartmerge')->cleanIfEmpty()) {
-                $observer->getQuote()->removeAllItems();
+                if (is_object($observer->getQuote()) && $observer->getQuote()->getId()) {
+                    $observer->getQuote()->removeAllItems();
+                }
             }
         }
     }
