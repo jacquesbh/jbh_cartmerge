@@ -1,0 +1,5 @@
+app/code/community/Jbh/CartMerge/etc/config.xml     app/code/community/Jbh/CartMerge/etc/config.xml
+app/code/community/Jbh/CartMerge/etc/system.xml     app/code/community/Jbh/CartMerge/etc/system.xml
+app/code/community/Jbh/CartMerge/Helper/Data.php    app/code/community/Jbh/CartMerge/Helper/Data.php
+app/code/community/Jbh/CartMerge/Model/Observer.php app/code/community/Jbh/CartMerge/Model/Observer.php
+app/etc/modules/Jbh_CartMerge.xml                   app/etc/modules/Jbh_CartMerge.xml
