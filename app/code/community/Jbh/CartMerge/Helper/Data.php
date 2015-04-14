@@ -46,7 +46,7 @@ class Jbh_CartMerge_Helper_Data extends Mage_Core_Helper_Abstract
      */
     public function cleanIfEmpty()
     {
-        Mage::getStoreConfigFlag(self::CONFIG_PATH_MERGE_CLEAN_IF_EMPTY);
+        return Mage::getStoreConfigFlag(self::CONFIG_PATH_MERGE_CLEAN_IF_EMPTY);
     }
 
 }
