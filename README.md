@@ -10,9 +10,7 @@ Copy the `app` directory recursively into your magento folder.
 
 ### For development
 
-Use the `install.sh`.
-
-    Usage: ./install.sh [un]install [magento dir]
+You can use modman :heart_eyes:
 
 ## Options
 
