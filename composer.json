@@ -1,0 +1,15 @@
+{
+    "name": "jacquesbh/jbh_cartmerge",
+    "description": "Magento module which disables the merge of the cart on login.",
+    "type": "magento-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Jacques Bodin-Hullin",
+            "email": "j.bodinhullin@monsieurbiz.com"
+        }
+    ],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "Allows to manage this package as a dependency."
+    }
+}
